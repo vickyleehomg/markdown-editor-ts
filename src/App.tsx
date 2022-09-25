@@ -1,19 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {
-  Center,
-  Stack,
-  Heading,
-  Flex,
-  Box,
-  Divider
-} from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+import Header from './components/layout/header';
+import Main from './main';
 
 function App() {
   return (
     <Flex>
-      <Heading size='2xl'>Markdown Editor</Heading>
+      <Header/>
+      <Main/>
     </Flex>
   );
 }
