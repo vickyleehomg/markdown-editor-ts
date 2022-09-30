@@ -11,18 +11,16 @@ function MarkdownEditor(){
 
   return(
     <Box>
-      <Heading size='lg'>Markdown Text</Heading>
-        <Divider/>
-        <Box>
       <CodeMirror
         value="Hi"
         height='calc(100vh - 132px)'
-        basicSetup={{
+        options={{
+          mode:'markdown',
+          lineWrapping:true,
           lineNumbers:false,
           foldGutter:false
         }}
       />
-      </Box>
     </Box>
 
   );
