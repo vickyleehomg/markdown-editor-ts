@@ -1,8 +1,7 @@
-export const INIT_CONTENT = `
+export const INIT_CONTENT = 
+`# VICKY(RUIQI) GAO
 
-# VICKY(RUIQI) GAO
-
-icon:map 4040 8th St. E
+icon:map 4040 8 Street East
 Saskatoon, SK S7H 5L4
 icon:phone (236)-818-2300
 icon:email vickyleehomg@gmail.com
@@ -17,7 +16,7 @@ University of Saskatchewan, Saskatoon, SK
 ## WORK EXPERIENCE
 
 **Full Stack Developer** -- **May 2019 - Dec 2019**
-Pivot Furniture，Saskatoon, SK
+Pivot Furniture, Saskatoon, SK
 - Worked with other developers and designers to develop and add new features on existing websites and mobile app
 - Developed both front-end and back-end code while performing code reviews of source code submitted from others
 - Fixed bugs from existing websites and app, implemented enhancements that significantly improved their functionality and speed

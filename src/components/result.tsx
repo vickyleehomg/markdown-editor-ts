@@ -19,7 +19,6 @@ function Result(){
           className='rs-view'
           dangerouslySetInnerHTML={{__html: markdownParserResume.render(markdownText)}}
         />
-
     </Box>
 
   );
