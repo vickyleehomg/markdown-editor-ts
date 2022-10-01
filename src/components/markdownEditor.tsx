@@ -7,6 +7,7 @@ import {
 } from '@chakra-ui/react';
 import CodeMirror from '@uiw/react-codemirror';
 import editorContext from '../editorContext';
+import { INIT_CONTENT } from '../utils/const';
 
 function MarkdownEditor(){
 
@@ -15,7 +16,7 @@ function MarkdownEditor(){
   return(
     <Box ml='5%'>
       <CodeMirror
-        value="# Hello"
+        value={INIT_CONTENT}
         height='calc(100vh - 60px)'
         onChange={(editor:any) => {
           setMarkdownText(editor.getValue());
