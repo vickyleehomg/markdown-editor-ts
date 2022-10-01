@@ -6,6 +6,7 @@ import {
   Divider
 } from '@chakra-ui/react';
 import MarkdownIt from 'markdown-it';
+import editorContext from '../editorContext';
 
 const markdownParserResume = new MarkdownIt({
   html: true,
@@ -15,11 +16,13 @@ const markdownParserResume = new MarkdownIt({
 
 function Result(){
 
+  const { markdownText } = useContext(editorContext);
+
   return(
     <Box ml='8%' mr='8%' my='30px' bg='white' minH='calc(100vh)'>
         <Box
             className='rs-view'
-            dangerouslySetInnerHTML={{__html: markdownParserResume.render('# Hello')}}/>
+            dangerouslySetInnerHTML={{__html: markdownParserResume.render(markdownText)}}/>
 
     </Box>
 
