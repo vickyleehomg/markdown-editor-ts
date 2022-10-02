@@ -1,7 +1,7 @@
 import React, { useState }from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Flex } from '@chakra-ui/react';
+import { Flex, ChakraProvider} from '@chakra-ui/react';
 import Header from './components/layout/header';
 import Main from './main';
 import EditorContext from './editorContext';
@@ -17,10 +17,12 @@ function App() {
 
   return (
     <EditorContext.Provider value={contextValue}>
-      <Flex>
-        <Header/>
-        <Main/>
-      </Flex>
+      <ChakraProvider>
+        <Flex>
+          <Header/>
+          <Main/>
+        </Flex>
+      </ChakraProvider>
     </EditorContext.Provider>
   );
 }

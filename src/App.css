@@ -167,6 +167,8 @@
   }
   .rs-view .icon {
     fill: #747474;
+     /* Make sure SVG files display properly in result viewer */
+    display: inline-flex;
   }
   .rs-view a {
     color: #747474;

@@ -1,14 +1,16 @@
 import React from 'react';
 import {
+    Box,
     Flex,
     Heading
   } from '@chakra-ui/react';
-import './header.less';
 
 function Header() {
     return(
-        <Flex className='rs-header' pos='fixed' w='100%'  h='48px' p='6px' bg='white'>
-            <Heading size='2xl' pl='6px'>Markdown Editor</Heading>
+        <Flex shadow='lg' pos='fixed' w='100%'  h='60px' zIndex={90} bg='white'>
+            <Box position='absolute' bottom='0'>
+                <Heading size='xl' pl='6px'>Markdown Editor</Heading>
+            </Box>
         </Flex>
     );
 };
