@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 import MarkdownIt from 'markdown-it';
 import editorContext from '../editorContext';
-import markdownParserResume from "../utils/emoji";
+import markdownParserResume from "../utils/parserPlugins";
 
 function Result(){
 

@@ -8,20 +8,34 @@ icon:email vickyleehomg@gmail.com
 icon:github https://github.com/vickyleehomg
 
 ## EDUCATION
-
-**Bachelor of Science with Honors in Computer Science** -- **2016.5-2021.5**
+:::left
+**Bachelor of Science with Honors in Computer Science**
+:::
+:::right
+**2016.5-2021.5**
+:::
 University of Saskatchewan, Saskatoon, SK
 
 
 ## WORK EXPERIENCE
 
-**Full Stack Developer** -- **May 2019 - Dec 2019**
+:::left
+**Full Stack Developer**
+:::
+:::right
+**May 2019 - Dec 2019**
+:::
 Pivot Furniture, Saskatoon, SK
 - Worked with other developers and designers to develop and add new features on existing websites and mobile app
 - Developed both front-end and back-end code while performing code reviews of source code submitted from others
 - Fixed bugs from existing websites and app, implemented enhancements that significantly improved their functionality and speed
 
-**Research Assistant** -- **Jan 2020 - May 2021**
+:::left
+**Research Assistant**
+:::
+:::right
+**Jan 2020 - May 2021**
+:::
 University of Saskatchewan, Saskatoon, SK
 - Conducted literature reviews
 - Collected and analyzed data
