@@ -1,28 +1,27 @@
 import React from 'react';
+import { RiMarkdownLine } from 'react-icons/ri'
 import {
-    Button,
     Center,
+    Icon,
     Flex,
     Heading,
     Spacer
   } from '@chakra-ui/react';
 import Shortcuts from '../shortcuts/shortcuts';
 import Problems from '../problems';
+import Progress from '../progress';
+import Themes from '../themes';
 
 function Header() {
     return(
         <Flex shadow='lg' pos='fixed' w='100%'  h='60px' zIndex={90} bg='whiteAlpha.50'>
-            <Center>
-                <Heading size='lg' pl='12px'>Markdown Editor</Heading>
+            <Center pl='12px'>
+                <Icon boxSize='36px' as={RiMarkdownLine} /><Heading size='lg' px='4px'>Markdown Resume</Heading>
             </Center>
-            <Flex ml='30px'>
+            <Flex ml='18px'>
                 <Shortcuts/>
-                <Button variant='ghost' borderRadius='0' h='100%' colorScheme={'blue'}>
-                    Button2
-                </Button>
-                <Button variant='ghost' borderRadius='0' h='100%' colorScheme={'blue'}>
-                    Button3
-                </Button>
+                <Themes/>
+                <Progress/>
             </Flex>
             <Spacer/>
             <Problems/>

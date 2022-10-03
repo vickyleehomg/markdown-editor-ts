@@ -2,7 +2,8 @@ import React, {useState, useRef }from 'react';
 import {
     Box,
     Button,
-    Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton,
+    Kbd,
+    Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, ModalFooter,
     VStack,
     Text,
     useDisclosure,
@@ -22,7 +23,7 @@ function Shortcuts(props:any){
     description:'Go and paste on your resume!'
   });
 
-  return(
+  return(    
     <>
       <Button variant='ghost' borderRadius='0' h='100%' colorScheme={'blue'}
         onClick={onOpen}>
@@ -49,7 +50,7 @@ function Shortcuts(props:any){
                         await navigator.clipboard.writeText('icon:'+k);
                         toast();
                       } catch(e){
-                        console.log('Copy fails.');
+                        console.log('Fail to copy!');
                       }}}>
                     <Box className="rs-shortcuts-item__icon"
                       dangerouslySetInnerHTML={{
@@ -62,6 +63,11 @@ function Shortcuts(props:any){
               })}
             </Box>
           </ModalBody>
+          <ModalFooter>
+            <span>
+              Click and then Press <Kbd>ctrl</Kbd> / <Kbd>⌘command</Kbd> + <Kbd>V</Kbd> on Editor
+            </span>
+          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
