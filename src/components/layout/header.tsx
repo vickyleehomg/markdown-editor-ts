@@ -7,6 +7,7 @@ import {
     Spacer
   } from '@chakra-ui/react';
 import Shortcuts from '../shortcuts/shortcuts';
+import Problems from '../problems';
 
 function Header() {
     return(
@@ -24,6 +25,7 @@ function Header() {
                 </Button>
             </Flex>
             <Spacer/>
+            <Problems/>
         </Flex>
     );
 };
