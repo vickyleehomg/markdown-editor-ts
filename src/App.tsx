@@ -1,5 +1,4 @@
 import React, { useState }from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Flex, ChakraProvider} from '@chakra-ui/react';
 import Header from './components/layout/header';

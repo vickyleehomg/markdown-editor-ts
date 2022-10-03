@@ -1,4 +1,3 @@
-import React from 'react';
 import svgMap from './svgMap';
 import MarkdownIt from 'markdown-it';
 import MdEmoji from 'markdown-it-emoji';

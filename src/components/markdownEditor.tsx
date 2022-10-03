@@ -1,10 +1,6 @@
 import React, { useContext } from 'react';
 import '../App.css';
-import {
-  Heading,
-  Box,
-  Divider
-} from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import CodeMirror from '@uiw/react-codemirror';
 import { EditorContext } from '../utils/contexts';
 import { INIT_CONTENT } from '../utils/const';

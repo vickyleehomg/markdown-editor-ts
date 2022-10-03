@@ -1,4 +1,4 @@
-import React, {useState, useRef }from 'react';
+import React from 'react';
 import {
   Button,
   Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton,
