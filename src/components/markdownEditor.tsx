@@ -6,12 +6,12 @@ import {
   Divider
 } from '@chakra-ui/react';
 import CodeMirror from '@uiw/react-codemirror';
-import editorContext from '../editorContext';
+import { EditorContext } from '../utils/contexts';
 import { INIT_CONTENT } from '../utils/const';
 
 function MarkdownEditor(){
 
-  const { setMarkdownText } = useContext(editorContext);
+  const { setMarkdownText } = useContext(EditorContext);
 
   return(
     <Box ml='5%'>
