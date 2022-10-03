@@ -1,12 +1,12 @@
 export const INIT_CONTENT = 
 `# VICKY(RUIQI) GAO
-
+\` \` 
 icon:map 4040 8 Street East
 Saskatoon, SK S7H 5L4
 icon:phone (236)-818-2300
 icon:email vickyleehomg@gmail.com
 icon:github https://github.com/vickyleehomg
-
+\` \`
 ## EDUCATION
 :::left
 **Bachelor of Science with Honors in Computer Science**
@@ -15,8 +15,7 @@ icon:github https://github.com/vickyleehomg
 **2016.5-2021.5**
 :::
 University of Saskatchewan, Saskatoon, SK
-
-
+\` \`
 ## WORK EXPERIENCE
 
 :::left
@@ -40,7 +39,7 @@ University of Saskatchewan, Saskatoon, SK
 - Conducted literature reviews
 - Collected and analyzed data
 - Wrote software as appropriate 
-
+\` \`
 ## RELEVANT PROJECTS
 
 ### Pivot Furniture -- Nov 2019
@@ -60,4 +59,33 @@ Designed and developed a new intermediate storage unit (container) to the existi
 Developed a photo uploader in the admin website. The tool is designed to allow UI teams to upload new product photo in admin website without editing the website.
   - Using React and React Redux with TypeScript for front-end programming
   - Using GraphQL server to upload files to AWS S3 Bucket.
+    
+### University of Saskatchewan -- Sep 2019 to May 2021
+
+\`Python\` \`Pandas\` \`Sci-kit Learn\`
+
+  - Collecting and analyzing data with Python libraries: NumPy and Pandas.
+  - Building prediction models with algorithms and methods available on Sci-kit learn.
+  - Summarizing, recording and reporting findings.
+  - Conducting literature reviews
+\` \`  
+## SUMMARY OF SKILLS
+
+### TECHNICAL
+  
+  - Experience in both front-end and back-end system design and development 
+  - Extensive experience in React, React Native, and TypeScript  
+  - Good understanding of Python3 and Java  
+  - Extensive experience in PostgreSQL and GraphQL  
+  - Experience in Git and Bitbucket pipeline
+    
+### INTERPERSONAL
+  
+  - Strong verbal and written communication skills.  
+  - Highly responsible and efficient in work.  
+  - Extremely organized and detail oriented
+\` \`  
+## References
+  
+Available upon request
 `;

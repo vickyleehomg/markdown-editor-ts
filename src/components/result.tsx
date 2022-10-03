@@ -11,7 +11,7 @@ function Result(){
   const { font } = useContext(FontContext);
 
   return(
-    <Box ml='8%' mr='8%' mb='80px' bg='whiteAlpha.600' minH='calc(100vh)' shadow='base'>
+    <Box ml='8%' mr='8%' mb='50px' bg='whiteAlpha.600' minH='calc(100vh)' shadow='base'>
       <Box className='rs-view'>
         <Box className={font}
             dangerouslySetInnerHTML={{__html: markdownParserResume.render(markdownText)}}/>

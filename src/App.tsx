@@ -2,6 +2,7 @@ import React, { useState }from 'react';
 import './App.css';
 import { Flex, ChakraProvider} from '@chakra-ui/react';
 import Header from './components/layout/header';
+import Footer from './components/layout/footer';
 import Main from './main';
 import { EditorContext, FontContext } from './utils/contexts';
 
@@ -28,6 +29,7 @@ function App() {
           <FontContext.Provider value={fontContextValue}>
             <Main/>
           </FontContext.Provider>
+          <Footer/>
         </Flex>
       </ChakraProvider>
     </EditorContext.Provider>

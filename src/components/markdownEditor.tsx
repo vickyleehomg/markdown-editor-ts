@@ -13,7 +13,7 @@ function MarkdownEditor(){
     <Box ml='5%'>
       <CodeMirror
         value={INIT_CONTENT}
-        height='calc(100vh - 60px)'
+        height='calc(100vh - 90px)'
         onChange={(editor:any) => {
           setMarkdownText(editor.getValue());
         }}
