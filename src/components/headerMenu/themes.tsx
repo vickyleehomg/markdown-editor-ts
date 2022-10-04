@@ -3,12 +3,14 @@ import {
   Box,
   Button,
   Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton,
+  Flex,
   Stack,
   Text,
   useDisclosure
 } from '@chakra-ui/react';
 import ConfirmDialog from './comfirmDialog';
 import { ThemeContext } from '../../utils/contexts';
+import { WarningIcon} from '@chakra-ui/icons';
 
 function Themes(){
     const selected = 'outline';
@@ -41,7 +43,15 @@ function Themes(){
                     </DrawerHeader>
                     <DrawerCloseButton />
                     <DrawerBody p='20px' overflow='scroll'>
+                        
                         <Stack>
+                            <Flex>
+                                <WarningIcon color='red' mx='5px'/>
+                                <Text>Notice! 
+                                </Text>
+                            </Flex> 
+                            <Text>This is a demo of interface.</Text>  
+                            <Text>The real theme feature is coming soon...</Text> 
                             <Stack as={Button} variant='link'
                                 onClick={()=>{
                                     setThemeSelect('warm')}}>
