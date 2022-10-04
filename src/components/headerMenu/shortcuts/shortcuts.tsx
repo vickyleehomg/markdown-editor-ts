@@ -9,7 +9,7 @@ import {
     useDisclosure,
     useToast    
 } from '@chakra-ui/react';
-import svgMap from "../../utils/svgMap";
+import svgMap from "../../../utils/svgMap";
 import './shortcuts.less'
 
 function Shortcuts(props:any){

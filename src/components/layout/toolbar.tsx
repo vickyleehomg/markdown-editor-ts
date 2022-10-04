@@ -4,8 +4,8 @@ import {
     Flex,
     HStack,
   } from '@chakra-ui/react';
-import ColorPicker from '../colorPicker';
-import FontSelector from '../fontSelector';
+import ColorPicker from '../toolbarMenu/colorPicker';
+import FontSelector from '../toolbarMenu/fontSelector';
 
 function Toolbar(){
     return(

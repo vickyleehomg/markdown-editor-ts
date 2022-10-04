@@ -7,10 +7,10 @@ import {
     Heading,
     Spacer
   } from '@chakra-ui/react';
-import Shortcuts from '../shortcuts/shortcuts';
-import Problems from '../problems';
-import Progress from '../progress';
-import Themes from '../themes';
+import Shortcuts from '../headerMenu/shortcuts/shortcuts';
+import Problems from '../headerMenu/problems';
+import Progress from '../headerMenu/progress';
+import Themes from '../headerMenu/themes';
 
 function Header() {
     return(

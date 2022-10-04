@@ -9,8 +9,8 @@ import {
     Spacer
 } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons'
-import fonts from '../utils/fontsMap';
-import { FontContext } from '../utils/contexts';
+import fonts from '../../utils/fontsMap';
+import { FontContext } from '../../utils/contexts';
 
 function FontSelector(){
     const { setFont } = useContext(FontContext);
