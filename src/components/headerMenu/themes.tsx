@@ -43,7 +43,6 @@ function Themes(){
                     </DrawerHeader>
                     <DrawerCloseButton />
                     <DrawerBody p='20px' overflow='scroll'>
-                        
                         <Stack>
                             <Flex>
                                 <WarningIcon color='red' mx='5px'/>
@@ -92,7 +91,10 @@ function Themes(){
                         </Stack>
                     </DrawerBody>
                     <DrawerFooter>
-                        <Button variant='outline' mr={3} onClick={drawer.onClose}>
+                        <Button variant='outline' mr={3}
+                            onClick={()=>{
+                                drawer.onClose()
+                                setThemeSelect(theme)}}>
                             Cancel
                         </Button>
                         <Button colorScheme='blue' onClick={dialog.onOpen}>
