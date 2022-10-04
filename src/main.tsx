@@ -16,7 +16,7 @@ function Main(){
         <Flex pos='fixed' mt ='60px'w='100%'>                        
             <Box w='35%' pos='relative'>
                 <Box zIndex='1' pos='absolute' top='5px'right='12px'>
-                    <Tooltip hasArrow label='Edit Area' bg='gray.100' color='blackAlpha.700'>
+                    <Tooltip hasArrow label='Edit Area' bg='blue.50' color='blackAlpha.600'>
                         <Badge variant='outline' colorScheme='pink'>
                             <EditIcon/> EDIT
                         </Badge>
@@ -27,7 +27,7 @@ function Main(){
             <Divider orientation='vertical'/>
             <Box w='65%' bg='blackAlpha.600' pos='relative'>
                 <Box zIndex='1' pos='absolute' top='5px'left='8px'>
-                    <Tooltip hasArrow label='Output Preview' bg='gray.100' color='blackAlpha.700'>
+                    <Tooltip hasArrow label='Output Preview' bg='blue.50' color='blackAlpha.600'>
                         <Badge variant='solid' colorScheme='green'>
                             <ViewIcon/> VIEW
                         </Badge>
