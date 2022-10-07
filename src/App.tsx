@@ -1,10 +1,7 @@
 import React, { useState }from 'react';
 import './App.css';
-import { Flex, ChakraProvider} from '@chakra-ui/react';
-import Header from './components/layout/header';
-import Footer from './components/layout/footer';
-import Main from './main';
 import { EditorContext, FontContext, ThemeContext } from './utils/contexts';
+import Layout from './components/layout/layout';
 
 function App() {
 
@@ -28,17 +25,11 @@ function App() {
 
   return (
     <EditorContext.Provider value={contextValue}>
-      <ChakraProvider>
-        <Flex>
-          <ThemeContext.Provider value={themeContextValue}>
-            <Header/>
-            <FontContext.Provider value={fontContextValue}>
-              <Main/>
-            </FontContext.Provider>
-          </ThemeContext.Provider>
-          <Footer/>
-        </Flex>
-      </ChakraProvider>
+      <ThemeContext.Provider value={themeContextValue}>
+        <FontContext.Provider value={fontContextValue}>
+          <Layout/>
+        </FontContext.Provider>
+      </ThemeContext.Provider>
     </EditorContext.Provider>
   );
 }
