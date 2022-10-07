@@ -21,7 +21,7 @@ root.render(
         <Route path="/" element={<Start />} />
         <Route path="/editor" element={<App />} />
       </Routes>
-    </BrowserRouter>,
+    </BrowserRouter>
   </ChakraProvider>
 );
 
