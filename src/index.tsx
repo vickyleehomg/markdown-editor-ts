@@ -9,20 +9,33 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import  { Breakpoint, BreakpointProvider } from 'react-socks';
 import Start from './start';
+import StartMobile from './startMobile';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <ChakraProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Start />} />
-        <Route path="/editor" element={<App />} />
-      </Routes>
-    </BrowserRouter>
-  </ChakraProvider>
+  <BreakpointProvider>
+    <ChakraProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={
+              <>
+                <Breakpoint medium up>
+                  <Start/>
+                </Breakpoint>
+                <Breakpoint small down>
+                  <StartMobile/>
+                </Breakpoint>
+              </>
+            } />
+          <Route path="/editor" element={<App />} />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
+  </BreakpointProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

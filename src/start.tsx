@@ -14,31 +14,32 @@ import { Link } from "react-router-dom";
 function Start(){
 
   return(
-    <Flex pos='fixed' w='100%' h='100%'>
-      <Flex pos='absolute' bottom='40%' w='100%'>
-        <VStack pos='relative' mx='3%'align='right'>
+    <Flex pos='fixed' w='100%' h='100%' alignItems='center'>
+      <Flex w='100%' >
+        <VStack pos='relative' mx='3%' align='left'>
           <Heading size='3xl' >MARKDOWN</Heading>
           <Heading size='3xl' >RESUME</Heading>
           <Heading size='sm' lineHeight='tall'>
             <Highlight
-              query='content'
-              styles={{ px: '1', rounded: 'full', bg: 'teal.200' }}
+                query='content'
+                styles={{ px: '1', rounded: 'full', bg: 'teal.200' }}
             >
               Focus on the content, no more painful layouts.
             </Highlight>
           </Heading>
         </VStack>
-
-        <VStack to='/editor' as={Link}align='left' bg='blue.50'>
+      
+        <VStack to='/editor' as={Link} align='left' bg='blue.50' >
           <Heading size='2xl'>
-            Get
+          Get
           </Heading>
           <Heading size='2xl'>
-            Start <Icon as={BiRightArrowCircle}/>
+              Start <Icon as={BiRightArrowCircle}/>
           </Heading>
         </VStack>
       </Flex>
     </Flex>
+
   );
 };
 
